@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ItemM.Models;
 using ItemM.Repository;
@@ -19,6 +12,9 @@ namespace ItemM
         public UpsertItem()
         {
             InitializeComponent();
+            this.BackColor = Color.White;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.DialogResult = DialogResult.Cancel;
         }
 
@@ -41,7 +37,6 @@ namespace ItemM
         {
             this.Text = "Edit Item";
 
-            this.lbid.Text = item.ItemID.ToString();
             this.tbItemName.Text = item.ItemName;
             this.tbItemDescription.Text = item.ItemDescription;
             this.itemId = item.ItemID;
@@ -61,7 +56,6 @@ namespace ItemM
                 var repo = new ItemRepository();
                 if (item.ItemID == 0)
                 {
-
                     repo.CreateItem(item);
                 }
                 else
@@ -83,4 +77,3 @@ namespace ItemM
         }
     }
 }
-

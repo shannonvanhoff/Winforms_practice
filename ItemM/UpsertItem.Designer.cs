@@ -28,118 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            ItId = new Label();
-            label3 = new Label();
-            tbItemName = new TextBox();
-            lbid = new Label();
-            tbItemDescription = new TextBox();
-            btnSave = new Button();
-            btnCancel = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbItemName = new System.Windows.Forms.TextBox();
+            this.tbItemDescription = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(281, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(132, 31);
-            label1.TabIndex = 0;
-            label1.Text = "Create Item";
-            label1.TextAlign = ContentAlignment.TopCenter;
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(50, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Item Name";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(31, 75);
-            label2.Name = "label2";
-            label2.Size = new Size(64, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Client Id";
-            // 
-            // ItId
-            // 
-            ItId.AutoSize = true;
-            ItId.Location = new Point(188, 75);
-            ItId.Name = "ItId";
-            ItId.Size = new Size(0, 20);
-            ItId.TabIndex = 2;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(31, 114);
-            label3.Name = "label3";
-            label3.Size = new Size(83, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Item Name";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(50, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Item Description";
             // 
             // tbItemName
             // 
-            tbItemName.Location = new Point(188, 107);
-            tbItemName.Name = "tbItemName";
-            tbItemName.Size = new Size(432, 27);
-            tbItemName.TabIndex = 4;
-            // 
-            // lbid
-            // 
-            lbid.AutoSize = true;
-            lbid.Location = new Point(31, 155);
-            lbid.Name = "lbid";
-            lbid.Size = new Size(119, 20);
-            lbid.TabIndex = 5;
-            lbid.Text = "Item Description";
-            lbid.Click += label4_Click;
+            this.tbItemName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbItemName.Location = new System.Drawing.Point(200, 147);
+            this.tbItemName.Name = "tbItemName";
+            this.tbItemName.Size = new System.Drawing.Size(200, 29);
+            this.tbItemName.TabIndex = 2;
             // 
             // tbItemDescription
             // 
-            tbItemDescription.Location = new Point(188, 155);
-            tbItemDescription.Name = "tbItemDescription";
-            tbItemDescription.Size = new Size(432, 27);
-            tbItemDescription.TabIndex = 6;
+            this.tbItemDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbItemDescription.Location = new System.Drawing.Point(200, 197);
+            this.tbItemDescription.Name = "tbItemDescription";
+            this.tbItemDescription.Size = new System.Drawing.Size(200, 29);
+            this.tbItemDescription.TabIndex = 3;
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(188, 242);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(110, 39);
-            btnSave.TabIndex = 7;
-            btnSave.Text = "Save";
-            btnSave.UseVisualStyleBackColor = true;
-            btnSave.Click += btnSave_Click;
+            this.btnSave.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSave.Location = new System.Drawing.Point(200, 250);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(90, 35);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(510, 242);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(110, 39);
-            btnCancel.TabIndex = 8;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnCancel_Click;
+            this.btnCancel.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Location = new System.Drawing.Point(310, 250);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(90, 35);
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Image = Image.FromFile(@"C:\Users\ashvi\source\repos\ItemM\Pictures\istockphoto.jpg");
+            this.pictureBox.Location = new System.Drawing.Point(50, 20);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 6;
+            this.pictureBox.TabStop = false;
             // 
             // UpsertItem
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(716, 290);
-            Controls.Add(btnCancel);
-            Controls.Add(btnSave);
-            Controls.Add(tbItemDescription);
-            Controls.Add(lbid);
-            Controls.Add(tbItemName);
-            Controls.Add(label3);
-            Controls.Add(ItId);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "UpsertItem";
-            Text = "UpsertItem";
-            Load += UpsertItem_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(450, 320);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.tbItemDescription);
+            this.Controls.Add(this.tbItemName);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "UpsertItem";
+            this.Text = "Upsert Item";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
@@ -153,5 +138,6 @@
         private TextBox tbItemDescription;
         private Button btnSave;
         private Button btnCancel;
+        private PictureBox pictureBox;
     }
 }

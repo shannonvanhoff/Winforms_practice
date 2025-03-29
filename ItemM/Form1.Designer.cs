@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            btnAdd_Click = new Button();
+            btnAdd = new Button();
             ItemTable = new DataGridView();
             btnEdit = new Button();
             btnDelete = new Button();
@@ -39,72 +39,78 @@
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(14, 12);
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(990, 31);
+            label1.Size = new Size(866, 23);
             label1.TabIndex = 0;
             label1.Text = "List of Items";
             label1.TextAlign = ContentAlignment.TopCenter;
-            label1.Click += label1_Click;
             // 
-            // btnAdd_Click
+            // btnAdd
             // 
-            btnAdd_Click.Location = new Point(14, 120);
-            btnAdd_Click.Margin = new Padding(3, 4, 3, 4);
-            btnAdd_Click.Name = "btnAdd_Click";
-            btnAdd_Click.Size = new Size(86, 31);
-            btnAdd_Click.TabIndex = 1;
-            btnAdd_Click.Text = "Add Item";
-            btnAdd_Click.UseVisualStyleBackColor = true;
-            btnAdd_Click.Click += button1_Click;
+            btnAdd.BackColor = Color.LightGreen;
+            btnAdd.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnAdd.Location = new Point(12, 85);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(75, 28);
+            btnAdd.TabIndex = 1;
+            btnAdd.Text = "Add Item";
+            btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += button1_Click;
             // 
             // ItemTable
             // 
             ItemTable.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             ItemTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             ItemTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ItemTable.Location = new Point(14, 162);
-            ItemTable.Margin = new Padding(3, 4, 3, 4);
+            ItemTable.Location = new Point(12, 122);
             ItemTable.MultiSelect = false;
             ItemTable.Name = "ItemTable";
             ItemTable.RowHeadersVisible = false;
             ItemTable.RowHeadersWidth = 51;
             ItemTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            ItemTable.Size = new Size(979, 425);
+            ItemTable.Size = new Size(857, 319);
             ItemTable.TabIndex = 4;
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(750, 113);
+            btnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnEdit.BackColor = Color.LightBlue;
+            btnEdit.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnEdit.Location = new Point(656, 85);
+            btnEdit.Margin = new Padding(3, 2, 3, 2);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(94, 29);
+            btnEdit.Size = new Size(82, 28);
             btnEdit.TabIndex = 5;
             btnEdit.Text = "Edit";
-            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.UseVisualStyleBackColor = false;
             btnEdit.Click += btnEdit_Click_1;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(883, 113);
+            btnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnDelete.BackColor = Color.LightCoral;
+            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnDelete.Location = new Point(773, 85);
+            btnDelete.Margin = new Padding(3, 2, 3, 2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(94, 29);
+            btnDelete.Size = new Size(82, 28);
             btnDelete.TabIndex = 6;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1017, 600);
+            ClientSize = new Size(890, 450);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(ItemTable);
-            Controls.Add(btnAdd_Click);
+            Controls.Add(btnAdd);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Item Manager";
             Load += Form1_Load;
@@ -112,15 +118,10 @@
             ResumeLayout(false);
         }
 
-        private void BtnEdit_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private Label label1;
-        private Button btnAdd_Click;
+        private Button btnAdd;
         private DataGridView ItemTable;
         private Button btnEdit;
         private Button btnDelete;

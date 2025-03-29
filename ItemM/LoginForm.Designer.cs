@@ -2,116 +2,116 @@
 {
     partial class LoginForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.PictureBox pictureBox;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            tbUsername = new TextBox();
-            tbPassword = new TextBox();
-            btnLogin = new Button();
-            btnRegister = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(48, 76);
-            label1.Name = "label1";
-            label1.Size = new Size(82, 20);
-            label1.TabIndex = 0;
-            label1.Text = "User Name";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(50, 150);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Username";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(59, 131);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Password";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(50, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Password";
             // 
             // tbUsername
             // 
-            tbUsername.Location = new Point(224, 76);
-            tbUsername.Name = "tbUsername";
-            tbUsername.Size = new Size(480, 27);
-            tbUsername.TabIndex = 2;
+            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbUsername.Location = new System.Drawing.Point(150, 147);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(200, 29);
+            this.tbUsername.TabIndex = 2;
             // 
             // tbPassword
             // 
-            tbPassword.Location = new Point(224, 131);
-            tbPassword.Name = "tbPassword";
-            tbPassword.Size = new Size(480, 27);
-            tbPassword.TabIndex = 3;
+            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbPassword.Location = new System.Drawing.Point(150, 197);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(200, 29);
+            this.tbPassword.TabIndex = 3;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(59, 212);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(86, 39);
-            btnLogin.TabIndex = 4;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += btnLogin_Click;
+            this.btnLogin.BackColor = System.Drawing.Color.LightGreen;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.Location = new System.Drawing.Point(150, 250);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(90, 35);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(224, 214);
-            btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(72, 37);
-            btnRegister.TabIndex = 5;
-            btnRegister.Text = "Register";
-            btnRegister.UseVisualStyleBackColor = true;
-            btnRegister.Click += btnRegister_Click;
+            this.btnRegister.BackColor = System.Drawing.Color.LightBlue;
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegister.Location = new System.Drawing.Point(260, 250);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(90, 35);
+            this.btnRegister.TabIndex = 5;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Image = Image.FromFile(@"C:\Users\ashvi\source\repos\ItemM\Pictures\enter-login-and-password-registration-page-on-screen-sign-in-to-your-account-creative-metaphor-login-page-mobile-app-with-user-page-identification-in-internet-vector.jpg");
+            this.pictureBox.Location = new System.Drawing.Point(150, 20);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 6;
+            this.pictureBox.TabStop = false;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(776, 450);
-            Controls.Add(btnRegister);
-            Controls.Add(btnLogin);
-            Controls.Add(tbPassword);
-            Controls.Add(tbUsername);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "LoginForm";
-            Text = "LoginForm";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(400, 320);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.tbUsername);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "LoginForm";
+            this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
-
-        #endregion
-
-        private Label label1;
-        private Label label2;
-        private TextBox tbUsername;
-        private TextBox tbPassword;
-        private Button btnLogin;
-        private Button btnRegister;
     }
+
 }
